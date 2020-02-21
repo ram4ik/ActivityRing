@@ -10,11 +10,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var progress: CGFloat = 0.3
+    
     var body: some View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            ActivityRingView()
+            ActivityRingView(progress: $progress)
                 .fixedSize()
         }
     }

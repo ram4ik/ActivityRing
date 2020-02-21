@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ActivityRingView: View {
+    @Binding var progress: CGFloat
+    
     var colors: [Color] = [Color.darkRed, Color.lightRed]
     
     var body: some View {
@@ -16,6 +18,7 @@ struct ActivityRingView: View {
             Circle()
                 .stroke(Color.outlineRed, lineWidth: 20)
             Circle()
+                .trim(from: 0, to: progress)
                 .stroke(
                     AngularGradient(
                         gradient: Gradient(colors: colors),
@@ -31,6 +34,6 @@ struct ActivityRingView: View {
 
 struct ActivityRingView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityRingView()
+        ActivityRingView(progress: .constant(CGFloat(0.0)))
     }
 }
