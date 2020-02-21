@@ -27,7 +27,7 @@ struct ActivityRingView: View {
                         endAngle: .degrees(360)
                     ),
                     style: StrokeStyle(lineWidth: 20, lineCap: .round)
-            )
+                ).rotationEffect(.degrees(-90))
         }.frame(idealWidth: 300, idealHeight: 300, alignment: .center)
     }
 }
