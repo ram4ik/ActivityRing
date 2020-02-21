@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  ActivityRing
@@ -10,7 +11,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            ActivityRingView()
+                .fixedSize()
+        }
     }
 }
 

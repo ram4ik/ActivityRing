@@ -13,6 +13,8 @@
 		95397C6823FFC084009DD595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95397C6723FFC084009DD595 /* Assets.xcassets */; };
 		95397C6B23FFC084009DD595 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95397C6A23FFC084009DD595 /* Preview Assets.xcassets */; };
 		95397C6E23FFC084009DD595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95397C6C23FFC084009DD595 /* LaunchScreen.storyboard */; };
+		95397C7623FFC0EC009DD595 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95397C7523FFC0EC009DD595 /* Extensions.swift */; };
+		95397C7823FFC126009DD595 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95397C7723FFC126009DD595 /* ActivityRingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		95397C6A23FFC084009DD595 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95397C6D23FFC084009DD595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95397C6F23FFC084009DD595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95397C7523FFC0EC009DD595 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		95397C7723FFC126009DD595 /* ActivityRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				95397C6C23FFC084009DD595 /* LaunchScreen.storyboard */,
 				95397C6F23FFC084009DD595 /* Info.plist */,
 				95397C6923FFC084009DD595 /* Preview Content */,
+				95397C7523FFC0EC009DD595 /* Extensions.swift */,
+				95397C7723FFC126009DD595 /* ActivityRingView.swift */,
 			);
 			path = ActivityRing;
 			sourceTree = "<group>";
@@ -148,7 +154,9 @@
 			files = (
 				95397C6223FFC083009DD595 /* AppDelegate.swift in Sources */,
 				95397C6423FFC083009DD595 /* SceneDelegate.swift in Sources */,
+				95397C7823FFC126009DD595 /* ActivityRingView.swift in Sources */,
 				95397C6623FFC083009DD595 /* ContentView.swift in Sources */,
+				95397C7623FFC0EC009DD595 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
