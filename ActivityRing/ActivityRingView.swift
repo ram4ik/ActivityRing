@@ -32,6 +32,12 @@ struct ActivityRingView: View {
                 .frame(width: 20, height: 20)
                 .foregroundColor(Color.darkRed)
                 .offset(y: -150)
+            Circle()
+                .frame(width: 20, height: 20)
+                .foregroundColor(progress > 0.95 ? Color.lightRed: Color.lightRed.opacity(0))
+                .offset(y: -150)
+                .rotationEffect(Angle.degrees(360 * Double(progress)))
+                .shadow(color: progress > 0.96 ? Color.black.opacity(0.1): Color.clear, radius: 3, x: 4, y: 0)
         }.frame(idealWidth: 300, idealHeight: 300, alignment: .center)
     }
 }
